@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using DatingApp.Data.Models;
 using DatingApp.Data.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace DatingApp.API.Controllers
 {
     // http:localhost:5000/api/Values
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase

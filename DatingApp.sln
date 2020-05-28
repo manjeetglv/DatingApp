@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatingApp.API", "DatingApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatingApp.Data", "DatingApp.Data\DatingApp.Data.csproj", "{2A4804C7-71F1-43B2-8FC7-BA043B1DE7AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatingApp.Security", "DatingApp.Security\DatingApp.Security.csproj", "{39872F87-73A1-44E6-899A-BA6A3EE74365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{2A4804C7-71F1-43B2-8FC7-BA043B1DE7AB}.Release|x64.Build.0 = Release|Any CPU
 		{2A4804C7-71F1-43B2-8FC7-BA043B1DE7AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{2A4804C7-71F1-43B2-8FC7-BA043B1DE7AB}.Release|x86.Build.0 = Release|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Debug|x64.Build.0 = Debug|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Debug|x86.Build.0 = Debug|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Release|x64.ActiveCfg = Release|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Release|x64.Build.0 = Release|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Release|x86.ActiveCfg = Release|Any CPU
+		{39872F87-73A1-44E6-899A-BA6A3EE74365}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -67,7 +67,7 @@ export class LoginReactiveBuilderFormComponent implements OnInit {
           if(!validationErrorMessagesInventory.hasOwnProperty(key)){
             throw "'"+ key +"' form element is missing in "+ Object.keys({validationErrorMessagesInventory})[0];
           }
-          const messages = this.validationErrorMessagesInventory[key];
+          const messages = validationErrorMessagesInventory[key];
 
           for (const errorKey in abstractFormControl.errors){
             if(!messages.hasOwnProperty(errorKey)){

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {map} from "rxjs/operators";
 
 @Injectable({
@@ -10,7 +10,7 @@ baseUrl = 'http://localhost:5000/api/auth/'
   constructor(private http: HttpClient) { }
 
   login(creds: any){
-    return this.http.post(this.baseUrl+'login', creds)
+    return this.http.post(this.baseUrl+'login', creds, {headers: new HttpHeaders({accept: "text/html"})})
       .pipe(map((response: any) =>  {
         const user = response;
         if(user){

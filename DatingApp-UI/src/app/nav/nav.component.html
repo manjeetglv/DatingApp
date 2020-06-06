@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<div class="container">
   <a class="navbar-brand" href="#">Dating App</a>
-  <ul class="navbar-nav mr-auto">
+  <ul class="navbar-nav mr-auto" *ngIf="isLoggedIn()">
     <li class="nav-item active">
       <a class="nav-link" href="#">Matches</a>
     </li>
@@ -10,23 +11,20 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Messages</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" (click)="logout()">Logout</a>
-    </li>
   </ul>
 
-  <div *ngIf="loggedIn()" class="dropdown">
-    <a class="dropdown-toggle text-light">
-      Welcome User
+  <div *ngIf="isLoggedIn()" class="dropdown" dropdown>
+    <a class="dropdown-toggle text-light" dropdownToggle>
+      Welcome {{getUserName() | titlecase}}
     </a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton" *dropdownMenu>
       <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
+      <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
     </div>
   </div>
 
-  <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
+  <form *ngIf="!isLoggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
     <input
       type="text"
       name="username"
@@ -46,4 +44,5 @@
     <button class="btn btn-success my-2 my-sm-0" type="submit" [disabled]="loginForm.invalid">Login</button>
   </form>
 
+</div>
 </nav>

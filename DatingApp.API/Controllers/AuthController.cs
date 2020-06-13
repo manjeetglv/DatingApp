@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
 using DatingApp.Data.Repositories.Authentication;
-using DatingApp.Security.Dtos;
-using DatingApp.Security.Models;
+using DatingApp.Data.Dtos;
+using DatingApp.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 

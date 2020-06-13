@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
   register(){
     console.log(this.creds);
     this.authService.register(this.creds).subscribe(()=>{
-      this.alertifyService.success('Registration Successful');
+      this.alertifyService.success('Registration  Successful');
     }, error => {
       this.alertifyService.error(error);
     });

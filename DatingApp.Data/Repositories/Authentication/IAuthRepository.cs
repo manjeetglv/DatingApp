@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using DatingApp.Security.Models;
+using DatingApp.Data.Models;
 
 namespace DatingApp.Data.Repositories.Authentication
 {

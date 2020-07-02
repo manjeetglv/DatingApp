@@ -23,6 +23,7 @@ import { MemberCardComponent } from './components/members/member-card/member-car
 import { MemberDetailComponent } from './components/members/member-detail/member-detail.component';
 import {TabsModule} from "ngx-bootstrap/tabs";
 import {NgxGalleryModule} from "ngx-gallery-9";
+import { MemberEditComponent } from './components/members/member-edit/member-edit.component';
 
 
 export function tokenGetter() {
@@ -39,7 +40,8 @@ return localStorage.getItem('token');
       ListsComponent,
       MessagesComponent,
       MemberCardComponent,
-      MemberDetailComponent
+      MemberDetailComponent,
+      MemberEditComponent
    ],
   imports: [
     BrowserModule,
